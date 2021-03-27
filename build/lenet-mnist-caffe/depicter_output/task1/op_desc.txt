@@ -1,0 +1,8 @@
+Index 0 Softmax Operation description
+        op_type : NVDLA_EMU_OP_SOFTMAX
+        axis : 0
+Index 1Power Operation description
+        op_type : NVDLA_EMU_OP_POWER
+        power : 0
+        axis : 0
+        shift : 0

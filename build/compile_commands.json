@@ -1,0 +1,42 @@
+[
+{
+  "directory": "/home/lei/nvdla_depicter/build",
+  "command": "/usr/bin/c++    -o3   -std=gnu++11 -o CMakeFiles/nvdla_depicter.dir/main.cpp.o -c /home/lei/nvdla_depicter/main.cpp",
+  "file": "/home/lei/nvdla_depicter/main.cpp"
+},
+{
+  "directory": "/home/lei/nvdla_depicter/build",
+  "command": "/usr/bin/c++    -o3   -std=gnu++11 -o CMakeFiles/nvdla_depicter.dir/DLA_desc.cpp.o -c /home/lei/nvdla_depicter/DLA_desc.cpp",
+  "file": "/home/lei/nvdla_depicter/DLA_desc.cpp"
+},
+{
+  "directory": "/home/lei/nvdla_depicter/build",
+  "command": "/usr/bin/c++    -o3   -std=gnu++11 -o CMakeFiles/nvdla_depicter.dir/tools.cpp.o -c /home/lei/nvdla_depicter/tools.cpp",
+  "file": "/home/lei/nvdla_depicter/tools.cpp"
+},
+{
+  "directory": "/home/lei/nvdla_depicter/build",
+  "command": "/usr/bin/c++    -o3   -std=gnu++11 -o CMakeFiles/nvdla_depicter.dir/Interface.cpp.o -c /home/lei/nvdla_depicter/Interface.cpp",
+  "file": "/home/lei/nvdla_depicter/Interface.cpp"
+},
+{
+  "directory": "/home/lei/nvdla_depicter/build",
+  "command": "/usr/bin/c++    -o3   -std=gnu++11 -o CMakeFiles/nvdla_depicter.dir/Graph_generator.cpp.o -c /home/lei/nvdla_depicter/Graph_generator.cpp",
+  "file": "/home/lei/nvdla_depicter/Graph_generator.cpp"
+},
+{
+  "directory": "/home/lei/nvdla_depicter/build",
+  "command": "/usr/bin/c++    -o3   -std=gnu++11 -o CMakeFiles/nvdla_depicter.dir/EMU_desc.cpp.o -c /home/lei/nvdla_depicter/EMU_desc.cpp",
+  "file": "/home/lei/nvdla_depicter/EMU_desc.cpp"
+},
+{
+  "directory": "/home/lei/nvdla_depicter/build",
+  "command": "/usr/bin/c++    -o3   -std=gnu++11 -o CMakeFiles/nvdla_depicter.dir/Global_desc.cpp.o -c /home/lei/nvdla_depicter/Global_desc.cpp",
+  "file": "/home/lei/nvdla_depicter/Global_desc.cpp"
+},
+{
+  "directory": "/home/lei/nvdla_depicter/build",
+  "command": "/usr/bin/c++    -o3   -std=gnu++11 -o CMakeFiles/nvdla_depicter.dir/driver.cpp.o -c /home/lei/nvdla_depicter/driver.cpp",
+  "file": "/home/lei/nvdla_depicter/driver.cpp"
+}
+]

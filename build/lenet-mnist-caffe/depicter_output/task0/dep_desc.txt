@@ -1,0 +1,350 @@
+Index 0    deal_with_common_op
+    index : 0
+    roi_index : 0
+    op_type : Convolution
+    dependency_count : 1
+    reserved0 : [ 0 , 0 , 0 ]
+    consumers : [
+        BDMA        DLA_CONSUMER
+            index : -1
+            event : DLA_EVENT_OP_COMPLETED
+            res : 0
+        Convolution        DLA_CONSUMER
+            index : 3
+            event : DLA_EVENT_OP_PROGRAMMED
+            res : 0
+        SDP        DLA_CONSUMER
+            index : 1
+            event : DLA_EVENT_OP_PROGRAMMED
+            res : 0
+        PDP        DLA_CONSUMER
+            index : -1
+            event : DLA_EVENT_OP_COMPLETED
+            res : 0
+        CDP        DLA_CONSUMER
+            index : -1
+            event : DLA_EVENT_OP_COMPLETED
+            res : 0
+        Rubik        DLA_CONSUMER
+            index : -1
+            event : DLA_EVENT_OP_COMPLETED
+            res : 0
+    fused_parent : DLA_CONSUMER
+            index : -1
+            event : DLA_EVENT_OP_COMPLETED
+            res : 0
+Index 1    deal_with_common_op
+    index : 1
+    roi_index : 0
+    op_type : SDP
+    dependency_count : 1
+    reserved0 : [ 0 , 0 , 0 ]
+    consumers : [
+        BDMA        DLA_CONSUMER
+            index : -1
+            event : DLA_EVENT_OP_COMPLETED
+            res : 0
+        Convolution        DLA_CONSUMER
+            index : -1
+            event : DLA_EVENT_OP_COMPLETED
+            res : 0
+        SDP        DLA_CONSUMER
+            index : 4
+            event : DLA_EVENT_OP_PROGRAMMED
+            res : 0
+        PDP        DLA_CONSUMER
+            index : 2
+            event : DLA_EVENT_OP_COMPLETED
+            res : 0
+        CDP        DLA_CONSUMER
+            index : -1
+            event : DLA_EVENT_OP_COMPLETED
+            res : 0
+        Rubik        DLA_CONSUMER
+            index : -1
+            event : DLA_EVENT_OP_COMPLETED
+            res : 0
+    fused_parent : DLA_CONSUMER
+            index : 0
+            event : DLA_EVENT_OP_ENABLED
+            res : 0
+Index 2    deal_with_common_op
+    index : 2
+    roi_index : 0
+    op_type : PDP
+    dependency_count : 1
+    reserved0 : [ 0 , 0 , 0 ]
+    consumers : [
+        BDMA        DLA_CONSUMER
+            index : -1
+            event : DLA_EVENT_OP_COMPLETED
+            res : 0
+        Convolution        DLA_CONSUMER
+            index : 3
+            event : DLA_EVENT_OP_COMPLETED
+            res : 0
+        SDP        DLA_CONSUMER
+            index : -1
+            event : DLA_EVENT_OP_COMPLETED
+            res : 0
+        PDP        DLA_CONSUMER
+            index : 5
+            event : DLA_EVENT_OP_PROGRAMMED
+            res : 0
+        CDP        DLA_CONSUMER
+            index : -1
+            event : DLA_EVENT_OP_COMPLETED
+            res : 0
+        Rubik        DLA_CONSUMER
+            index : -1
+            event : DLA_EVENT_OP_COMPLETED
+            res : 0
+    fused_parent : DLA_CONSUMER
+            index : -1
+            event : DLA_EVENT_OP_COMPLETED
+            res : 0
+Index 3    deal_with_common_op
+    index : 3
+    roi_index : 0
+    op_type : Convolution
+    dependency_count : 3
+    reserved0 : [ 0 , 0 , 0 ]
+    consumers : [
+        BDMA        DLA_CONSUMER
+            index : -1
+            event : DLA_EVENT_OP_COMPLETED
+            res : 0
+        Convolution        DLA_CONSUMER
+            index : 6
+            event : DLA_EVENT_OP_PROGRAMMED
+            res : 0
+        SDP        DLA_CONSUMER
+            index : 4
+            event : DLA_EVENT_OP_PROGRAMMED
+            res : 0
+        PDP        DLA_CONSUMER
+            index : -1
+            event : DLA_EVENT_OP_COMPLETED
+            res : 0
+        CDP        DLA_CONSUMER
+            index : -1
+            event : DLA_EVENT_OP_COMPLETED
+            res : 0
+        Rubik        DLA_CONSUMER
+            index : -1
+            event : DLA_EVENT_OP_COMPLETED
+            res : 0
+    fused_parent : DLA_CONSUMER
+            index : -1
+            event : DLA_EVENT_OP_COMPLETED
+            res : 0
+Index 4    deal_with_common_op
+    index : 4
+    roi_index : 0
+    op_type : SDP
+    dependency_count : 2
+    reserved0 : [ 0 , 0 , 0 ]
+    consumers : [
+        BDMA        DLA_CONSUMER
+            index : -1
+            event : DLA_EVENT_OP_COMPLETED
+            res : 0
+        Convolution        DLA_CONSUMER
+            index : -1
+            event : DLA_EVENT_OP_COMPLETED
+            res : 0
+        SDP        DLA_CONSUMER
+            index : 7
+            event : DLA_EVENT_OP_PROGRAMMED
+            res : 0
+        PDP        DLA_CONSUMER
+            index : 5
+            event : DLA_EVENT_OP_COMPLETED
+            res : 0
+        CDP        DLA_CONSUMER
+            index : -1
+            event : DLA_EVENT_OP_COMPLETED
+            res : 0
+        Rubik        DLA_CONSUMER
+            index : -1
+            event : DLA_EVENT_OP_COMPLETED
+            res : 0
+    fused_parent : DLA_CONSUMER
+            index : 3
+            event : DLA_EVENT_OP_ENABLED
+            res : 0
+Index 5    deal_with_common_op
+    index : 5
+    roi_index : 0
+    op_type : PDP
+    dependency_count : 2
+    reserved0 : [ 0 , 0 , 0 ]
+    consumers : [
+        BDMA        DLA_CONSUMER
+            index : -1
+            event : DLA_EVENT_OP_COMPLETED
+            res : 0
+        Convolution        DLA_CONSUMER
+            index : 6
+            event : DLA_EVENT_OP_COMPLETED
+            res : 0
+        SDP        DLA_CONSUMER
+            index : -1
+            event : DLA_EVENT_OP_COMPLETED
+            res : 0
+        PDP        DLA_CONSUMER
+            index : -1
+            event : DLA_EVENT_OP_COMPLETED
+            res : 0
+        CDP        DLA_CONSUMER
+            index : -1
+            event : DLA_EVENT_OP_COMPLETED
+            res : 0
+        Rubik        DLA_CONSUMER
+            index : -1
+            event : DLA_EVENT_OP_COMPLETED
+            res : 0
+    fused_parent : DLA_CONSUMER
+            index : -1
+            event : DLA_EVENT_OP_COMPLETED
+            res : 0
+Index 6    deal_with_common_op
+    index : 6
+    roi_index : 0
+    op_type : Convolution
+    dependency_count : 3
+    reserved0 : [ 0 , 0 , 0 ]
+    consumers : [
+        BDMA        DLA_CONSUMER
+            index : -1
+            event : DLA_EVENT_OP_COMPLETED
+            res : 0
+        Convolution        DLA_CONSUMER
+            index : 8
+            event : DLA_EVENT_OP_PROGRAMMED
+            res : 0
+        SDP        DLA_CONSUMER
+            index : 7
+            event : DLA_EVENT_OP_PROGRAMMED
+            res : 0
+        PDP        DLA_CONSUMER
+            index : -1
+            event : DLA_EVENT_OP_COMPLETED
+            res : 0
+        CDP        DLA_CONSUMER
+            index : -1
+            event : DLA_EVENT_OP_COMPLETED
+            res : 0
+        Rubik        DLA_CONSUMER
+            index : -1
+            event : DLA_EVENT_OP_COMPLETED
+            res : 0
+    fused_parent : DLA_CONSUMER
+            index : -1
+            event : DLA_EVENT_OP_COMPLETED
+            res : 0
+Index 7    deal_with_common_op
+    index : 7
+    roi_index : 0
+    op_type : SDP
+    dependency_count : 2
+    reserved0 : [ 0 , 0 , 0 ]
+    consumers : [
+        BDMA        DLA_CONSUMER
+            index : -1
+            event : DLA_EVENT_OP_COMPLETED
+            res : 0
+        Convolution        DLA_CONSUMER
+            index : 8
+            event : DLA_EVENT_OP_COMPLETED
+            res : 0
+        SDP        DLA_CONSUMER
+            index : 9
+            event : DLA_EVENT_OP_PROGRAMMED
+            res : 0
+        PDP        DLA_CONSUMER
+            index : -1
+            event : DLA_EVENT_OP_COMPLETED
+            res : 0
+        CDP        DLA_CONSUMER
+            index : -1
+            event : DLA_EVENT_OP_COMPLETED
+            res : 0
+        Rubik        DLA_CONSUMER
+            index : -1
+            event : DLA_EVENT_OP_COMPLETED
+            res : 0
+    fused_parent : DLA_CONSUMER
+            index : 6
+            event : DLA_EVENT_OP_ENABLED
+            res : 0
+Index 8    deal_with_common_op
+    index : 8
+    roi_index : 0
+    op_type : Convolution
+    dependency_count : 3
+    reserved0 : [ 0 , 0 , 0 ]
+    consumers : [
+        BDMA        DLA_CONSUMER
+            index : -1
+            event : DLA_EVENT_OP_COMPLETED
+            res : 0
+        Convolution        DLA_CONSUMER
+            index : -1
+            event : DLA_EVENT_OP_COMPLETED
+            res : 0
+        SDP        DLA_CONSUMER
+            index : 9
+            event : DLA_EVENT_OP_PROGRAMMED
+            res : 0
+        PDP        DLA_CONSUMER
+            index : -1
+            event : DLA_EVENT_OP_COMPLETED
+            res : 0
+        CDP        DLA_CONSUMER
+            index : -1
+            event : DLA_EVENT_OP_COMPLETED
+            res : 0
+        Rubik        DLA_CONSUMER
+            index : -1
+            event : DLA_EVENT_OP_COMPLETED
+            res : 0
+    fused_parent : DLA_CONSUMER
+            index : -1
+            event : DLA_EVENT_OP_COMPLETED
+            res : 0
+Index 9    deal_with_common_op
+    index : 9
+    roi_index : 0
+    op_type : SDP
+    dependency_count : 2
+    reserved0 : [ 0 , 0 , 0 ]
+    consumers : [
+        BDMA        DLA_CONSUMER
+            index : -1
+            event : DLA_EVENT_OP_COMPLETED
+            res : 0
+        Convolution        DLA_CONSUMER
+            index : -1
+            event : DLA_EVENT_OP_COMPLETED
+            res : 0
+        SDP        DLA_CONSUMER
+            index : -1
+            event : DLA_EVENT_OP_COMPLETED
+            res : 0
+        PDP        DLA_CONSUMER
+            index : -1
+            event : DLA_EVENT_OP_COMPLETED
+            res : 0
+        CDP        DLA_CONSUMER
+            index : -1
+            event : DLA_EVENT_OP_COMPLETED
+            res : 0
+        Rubik        DLA_CONSUMER
+            index : -1
+            event : DLA_EVENT_OP_COMPLETED
+            res : 0
+    fused_parent : DLA_CONSUMER
+            index : 8
+            event : DLA_EVENT_OP_ENABLED
+            res : 0

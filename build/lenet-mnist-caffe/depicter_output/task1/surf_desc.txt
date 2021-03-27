@@ -1,0 +1,24 @@
+Buffers description 0
+  src_data Emu_buffer_desc
+        addressIndex : 2
+        size : 16384
+        format : 16
+        /* cube dimensions */
+        width : 0
+        height : 1
+        channel : 1
+        /* stride information */
+        line_stride : 655361
+        surf_stride : 8
+Buffers description 1
+  dst_data Emu_buffer_desc
+        addressIndex : 4
+        size : 0
+        format : 16
+        /* cube dimensions */
+        width : 0
+        height : 1
+        channel : 1
+        /* stride information */
+        line_stride : 655361
+        surf_stride : 8
