@@ -8,155 +8,151 @@
 		<Option virtualFolders="CMake Files\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="/home/lei/nvdla_depicter/cmake-build-debug"/>
+				<Option working_dir="/Users/wanglei/nvdla-depicter/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/home/lei/nvdla_depicter/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/lei/nvdla_depicter/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/home/lei/nvdla_depicter/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/home/lei/nvdla_depicter/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/wanglei/nvdla-depicter/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/wanglei/nvdla-depicter/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/wanglei/nvdla-depicter/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/wanglei/nvdla-depicter/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="/home/lei/nvdla_depicter/cmake-build-debug"/>
+				<Option working_dir="/Users/wanglei/nvdla-depicter/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/home/lei/nvdla_depicter/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/lei/nvdla_depicter/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/home/lei/nvdla_depicter/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/home/lei/nvdla_depicter/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="nvdla_depicter">
-				<Option output="/home/lei/nvdla_depicter/cmake-build-debug/nvdla_depicter" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/lei/nvdla_depicter/cmake-build-debug"/>
-				<Option object_output="./"/>
-				<Option type="1"/>
-				<Option compiler="gcc"/>
-				<Compiler>
-					<Add directory="/home/lei/nvdla_depicter/."/>
-					<Add directory="/home/lei/nvdla_depicter/external"/>
-					<Add directory="/home/lei/nvdla_depicter/external/flatbuffers"/>
-					<Add directory="/usr/include/c++/7"/>
-					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
-					<Add directory="/usr/include/c++/7/backward"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
-					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
-					<Add directory="/usr/include/x86_64-linux-gnu"/>
-					<Add directory="/usr/include"/>
-				</Compiler>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/home/lei/nvdla_depicter/cmake-build-debug/Makefile&quot;  VERBOSE=1 nvdla_depicter"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/lei/nvdla_depicter/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/home/lei/nvdla_depicter/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/home/lei/nvdla_depicter/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="nvdla_depicter/fast">
-				<Option output="/home/lei/nvdla_depicter/cmake-build-debug/nvdla_depicter" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/lei/nvdla_depicter/cmake-build-debug"/>
-				<Option object_output="./"/>
-				<Option type="1"/>
-				<Option compiler="gcc"/>
-				<Compiler>
-					<Add directory="/home/lei/nvdla_depicter/."/>
-					<Add directory="/home/lei/nvdla_depicter/external"/>
-					<Add directory="/home/lei/nvdla_depicter/external/flatbuffers"/>
-					<Add directory="/usr/include/c++/7"/>
-					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
-					<Add directory="/usr/include/c++/7/backward"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
-					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
-					<Add directory="/usr/include/x86_64-linux-gnu"/>
-					<Add directory="/usr/include"/>
-				</Compiler>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/home/lei/nvdla_depicter/cmake-build-debug/Makefile&quot;  VERBOSE=1 nvdla_depicter/fast"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/lei/nvdla_depicter/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/home/lei/nvdla_depicter/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/home/lei/nvdla_depicter/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/wanglei/nvdla-depicter/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/wanglei/nvdla-depicter/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/wanglei/nvdla-depicter/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/wanglei/nvdla-depicter/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
-				<Option working_dir="/home/lei/nvdla_depicter/cmake-build-debug"/>
+				<Option working_dir="/Users/wanglei/nvdla-depicter/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/home/lei/nvdla_depicter/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/lei/nvdla_depicter/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/home/lei/nvdla_depicter/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/home/lei/nvdla_depicter/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/wanglei/nvdla-depicter/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/wanglei/nvdla-depicter/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/wanglei/nvdla-depicter/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/wanglei/nvdla-depicter/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="nvdla_depicter">
+				<Option output="/Users/wanglei/nvdla-depicter/cmake-build-debug/nvdla_depicter" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/wanglei/nvdla-depicter/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/wanglei/nvdla-depicter/."/>
+					<Add directory="/Users/wanglei/nvdla-depicter/external"/>
+					<Add directory="/Users/wanglei/nvdla-depicter/external/flatbuffers"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/11.0.3/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/wanglei/nvdla-depicter/cmake-build-debug/Makefile&quot;  VERBOSE=1 nvdla_depicter"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/wanglei/nvdla-depicter/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/wanglei/nvdla-depicter/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/wanglei/nvdla-depicter/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="nvdla_depicter/fast">
+				<Option output="/Users/wanglei/nvdla-depicter/cmake-build-debug/nvdla_depicter" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/wanglei/nvdla-depicter/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/wanglei/nvdla-depicter/."/>
+					<Add directory="/Users/wanglei/nvdla-depicter/external"/>
+					<Add directory="/Users/wanglei/nvdla-depicter/external/flatbuffers"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/11.0.3/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/wanglei/nvdla-depicter/cmake-build-debug/Makefile&quot;  VERBOSE=1 nvdla_depicter/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/wanglei/nvdla-depicter/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/wanglei/nvdla-depicter/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/wanglei/nvdla-depicter/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/home/lei/nvdla_depicter/DLA_desc.cpp">
+		<Unit filename="/Users/wanglei/nvdla-depicter/DLA_desc.cpp">
 			<Option target="nvdla_depicter"/>
 		</Unit>
-		<Unit filename="/home/lei/nvdla_depicter/DLA_desc.h">
+		<Unit filename="/Users/wanglei/nvdla-depicter/DLA_desc.h">
 			<Option target="nvdla_depicter"/>
 		</Unit>
-		<Unit filename="/home/lei/nvdla_depicter/EMU_desc.cpp">
+		<Unit filename="/Users/wanglei/nvdla-depicter/EMU_desc.cpp">
 			<Option target="nvdla_depicter"/>
 		</Unit>
-		<Unit filename="/home/lei/nvdla_depicter/EMU_desc.h">
+		<Unit filename="/Users/wanglei/nvdla-depicter/EMU_desc.h">
 			<Option target="nvdla_depicter"/>
 		</Unit>
-		<Unit filename="/home/lei/nvdla_depicter/Global_desc.cpp">
+		<Unit filename="/Users/wanglei/nvdla-depicter/Global_desc.cpp">
 			<Option target="nvdla_depicter"/>
 		</Unit>
-		<Unit filename="/home/lei/nvdla_depicter/Global_desc.h">
+		<Unit filename="/Users/wanglei/nvdla-depicter/Global_desc.h">
 			<Option target="nvdla_depicter"/>
 		</Unit>
-		<Unit filename="/home/lei/nvdla_depicter/Graph_generator.cpp">
+		<Unit filename="/Users/wanglei/nvdla-depicter/Graph_generator.cpp">
 			<Option target="nvdla_depicter"/>
 		</Unit>
-		<Unit filename="/home/lei/nvdla_depicter/Graph_generator.h">
+		<Unit filename="/Users/wanglei/nvdla-depicter/Graph_generator.h">
 			<Option target="nvdla_depicter"/>
 		</Unit>
-		<Unit filename="/home/lei/nvdla_depicter/Interface.cpp">
+		<Unit filename="/Users/wanglei/nvdla-depicter/Interface.cpp">
 			<Option target="nvdla_depicter"/>
 		</Unit>
-		<Unit filename="/home/lei/nvdla_depicter/Interface.h">
+		<Unit filename="/Users/wanglei/nvdla-depicter/Interface.h">
 			<Option target="nvdla_depicter"/>
 		</Unit>
-		<Unit filename="/home/lei/nvdla_depicter/README.md">
+		<Unit filename="/Users/wanglei/nvdla-depicter/README.md">
 			<Option target="nvdla_depicter"/>
 		</Unit>
-		<Unit filename="/home/lei/nvdla_depicter/driver.cpp">
+		<Unit filename="/Users/wanglei/nvdla-depicter/driver.cpp">
 			<Option target="nvdla_depicter"/>
 		</Unit>
-		<Unit filename="/home/lei/nvdla_depicter/driver.h">
+		<Unit filename="/Users/wanglei/nvdla-depicter/driver.h">
 			<Option target="nvdla_depicter"/>
 		</Unit>
-		<Unit filename="/home/lei/nvdla_depicter/external/flatbuffers/base.h">
+		<Unit filename="/Users/wanglei/nvdla-depicter/external/flatbuffers/base.h">
 			<Option target="nvdla_depicter"/>
 		</Unit>
-		<Unit filename="/home/lei/nvdla_depicter/external/flatbuffers/flatbuffers.h">
+		<Unit filename="/Users/wanglei/nvdla-depicter/external/flatbuffers/flatbuffers.h">
 			<Option target="nvdla_depicter"/>
 		</Unit>
-		<Unit filename="/home/lei/nvdla_depicter/external/flatbuffers/stl_emulation.h">
+		<Unit filename="/Users/wanglei/nvdla-depicter/external/flatbuffers/stl_emulation.h">
 			<Option target="nvdla_depicter"/>
 		</Unit>
-		<Unit filename="/home/lei/nvdla_depicter/external/half.h">
+		<Unit filename="/Users/wanglei/nvdla-depicter/external/half.h">
 			<Option target="nvdla_depicter"/>
 		</Unit>
-		<Unit filename="/home/lei/nvdla_depicter/external/loadable_generated.h">
+		<Unit filename="/Users/wanglei/nvdla-depicter/external/loadable_generated.h">
 			<Option target="nvdla_depicter"/>
 		</Unit>
-		<Unit filename="/home/lei/nvdla_depicter/main.cpp">
+		<Unit filename="/Users/wanglei/nvdla-depicter/main.cpp">
 			<Option target="nvdla_depicter"/>
 		</Unit>
-		<Unit filename="/home/lei/nvdla_depicter/main.h">
+		<Unit filename="/Users/wanglei/nvdla-depicter/main.h">
 			<Option target="nvdla_depicter"/>
 		</Unit>
-		<Unit filename="/home/lei/nvdla_depicter/tools.cpp">
+		<Unit filename="/Users/wanglei/nvdla-depicter/tools.cpp">
 			<Option target="nvdla_depicter"/>
 		</Unit>
-		<Unit filename="/home/lei/nvdla_depicter/tools.h">
+		<Unit filename="/Users/wanglei/nvdla-depicter/tools.h">
 			<Option target="nvdla_depicter"/>
 		</Unit>
-		<Unit filename="/home/lei/nvdla_depicter/CMakeLists.txt">
+		<Unit filename="/Users/wanglei/nvdla-depicter/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
 	</Project>
