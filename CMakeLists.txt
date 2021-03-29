@@ -1,9 +1,32 @@
-cmake_minimum_required(VERSION 3.3.2)
+cmake_minimum_required(VERSION 3.14)
 project(nvdla_depicter)
 
-set(CMAKE_CXX_STANDARD 11)
-set(CMAKE_BUILD_TYPE "Debug")
-set(CMAKE_CXX_FLAGS "-o3")
+set(CMAKE_CXX_STANDARD 14)
 
+include_directories(.)
+include_directories(external)
+include_directories(external/flatbuffers)
 
-add_executable(nvdla_depicter main.cpp external/loadable_generated.h external/flatbuffers/flatbuffers.h external/flatbuffers/base.h DLA_desc.h DLA_desc.cpp tools.h Interface.h EMU_desc.h driver.h external/flatbuffers/stl_emulation.h Graph_generator.h main.h Global_desc.h tools.cpp Interface.cpp Graph_generator.cpp EMU_desc.cpp Global_desc.cpp external/half.h driver.cpp)
+add_executable(nvdla_depicter
+        external/flatbuffers/base.h
+        external/flatbuffers/flatbuffers.h
+        external/flatbuffers/stl_emulation.h
+        external/half.h
+        external/loadable_generated.h
+        DLA_desc.cpp
+        DLA_desc.h
+        driver.cpp
+        driver.h
+        EMU_desc.cpp
+        EMU_desc.h
+        Global_desc.cpp
+        Global_desc.h
+        Graph_generator.cpp
+        Graph_generator.h
+        Interface.cpp
+        Interface.h
+        main.cpp
+        main.h
+        README.md
+        tools.cpp
+        tools.h)

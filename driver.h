@@ -23,7 +23,7 @@ class Driver{
         //Get the abstract addr_index from the relative addr_index
         auto addr_converted_index = loadable->task_list()->Get(task_index)->address_list()->Get(addr_index);
 
-        //Since addr_index is a surjection of mem_list, and only mem_list has names, it should look up
+        // Since addr_index is a surjection of mem_list, and only mem_list has names, it should look up
         // the addr_index_dict to get the mem_index.
         return mem_list.alias_dict[addr_list.index_dict[addr_converted_index]];
     }

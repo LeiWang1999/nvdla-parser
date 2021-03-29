@@ -124,16 +124,16 @@ bool Driver::engine_start(const string &py_name, const string &format, const str
             emu_op_buf.generate_file(ofs_surf);
 
             //Draw processing flow
-            // EMU_graph emu_graph(emu_op_desc, addr_list,emu_op_buf,off_set);
-            // emu_graph.draw_data_flow(ofpy);
-            // off_set+= emu_net_desc.get_num_op();
+             EMU_graph emu_graph(emu_op_desc, addr_list,emu_op_buf,off_set);
+             emu_graph.draw_data_flow(ofpy);
+             off_set+= emu_net_desc.get_num_op();
 
-            // ofs_op.close();ofs_net.close();ofs_surf.close();
+             ofs_op.close();ofs_net.close();ofs_surf.close();
 
         }
     }
     //Write commands that is necessary at the end of each file.
-    // Graph_base::graph_tail(ofpy,image_name);
+    Graph_base::graph_tail(ofpy,image_name);
     ofpy.close();
 
 
@@ -147,6 +147,7 @@ int Driver::get_blob_index(string const &str) {
     for(int i = 0;i<blobs->size();i++)
     {
         auto entry = blobs->Get(i);
+//        printf("index : %d, name : %s \r\n", i, entry->name()->c_str());
         if (!strcmp(str.c_str(),entry->name()->c_str()))
             return i;
     }
