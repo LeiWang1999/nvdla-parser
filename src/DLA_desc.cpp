@@ -4,7 +4,7 @@
 // https://github.com/nvdla/sw
 //
 
-#include "DLA_desc.h"
+#include "include/DLA_desc.h"
 
 #include <string>
 #include <sstream>

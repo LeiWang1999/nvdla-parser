@@ -7,13 +7,14 @@
 #include <iostream>
 
 #include "Interface.h"
-#include "driver.h"
-#include "main.h"
+#include "include/driver.h"
+#include "appargs.h"
 #include "tools.h"
 #include <cstring>
-#include <vector>
-#include <sys/stat.h> 　
 #include <exception>
+#include <sys/stat.h>
+#include <vector>
+#include "stdio.h"
 
 //Used to show help information.
 void show_help(char * * argv){
@@ -175,7 +176,7 @@ int main(int argc, char * argv[]) {
         }
     }
     catch (std::exception & exc){
-        printf("Error when generating graph! Error: %s\n",exc);
+        printf("Error when generating graph! Error: %s\n",exc.what());
         return 0;
     }
 
@@ -186,7 +187,7 @@ int main(int argc, char * argv[]) {
         pclose(fp);
     }
     catch (std::exception & exc){
-        printf("Error when writing graph file! Error: %s\n",exc);
+        printf("Error when writing graph file! Error: %s\n",exc.what());
         return 0;
     }
 

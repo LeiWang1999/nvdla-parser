@@ -7,13 +7,11 @@
 #ifndef NVDLA_DEPICTER_GRAPH_GENERATOR_H
 #define NVDLA_DEPICTER_GRAPH_GENERATOR_H
 
-#include <string>
-#include <map>
-#include <vector>
-#include "DLA_desc.h"
 #include "EMU_desc.h"
-
-
+#include "include/DLA_desc.h"
+#include <map>
+#include <string>
+#include <vector>
 
 //Base class for graph drawers.
 

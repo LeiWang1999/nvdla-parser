@@ -1,5 +1,7 @@
 build
 
+lib
+
 cmake-build-debug
 
 data

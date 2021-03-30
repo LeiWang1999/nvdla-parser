@@ -6,8 +6,8 @@
 ///Provide a structure that stores all test information
 
 
-#ifndef NVDLA_DEPICTER_MAIN_H
-#define NVDLA_DEPICTER_MAIN_H
+#ifndef NVDLA_DEPICTER_APPARGS_H
+#define NVDLA_DEPICTER_APPARGS_H
 
 #include <string>
 

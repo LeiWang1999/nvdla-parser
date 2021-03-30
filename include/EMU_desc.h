@@ -10,7 +10,7 @@
 #ifndef OP_DESC_PARSER_EMU_DESC_H
 #define OP_DESC_PARSER_EMU_DESC_H
 
-#include "DLA_desc.h"
+#include "include/DLA_desc.h"
 #include <iostream>
 // Class that deals with the net description blob, which describes needed information for starting a task.
 

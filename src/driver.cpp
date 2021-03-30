@@ -2,14 +2,14 @@
 // Created by Deng Weijia on 8/27/18.
 //
 
-#include "driver.h"
-#include "Interface.h"
-#include <string>
-#include "external/loadable_generated.h"
-#include "DLA_desc.h"
+#include "include/driver.h"
 #include "EMU_desc.h"
 #include "Graph_generator.h"
+#include "Interface.h"
+#include "external/loadable_generated.h"
+#include "include/DLA_desc.h"
 #include <cstring>
+#include <string>
 #include <sys/stat.h> 　
 #include <sys/types.h>
 
