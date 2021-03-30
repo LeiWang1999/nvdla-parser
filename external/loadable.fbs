@@ -94,7 +94,7 @@ enum MemoryFlags : ushort { NONE = 0, ALLOC = 1, SET = 2, INPUT = 4, OUTPUT = 8 
 // bind_id        := iff (input|output|debug) specified, the associated bind api id
 // tensor_desc_id := iff (input|output|debug) specified, the tensor desc id
 //
-        table MemoryListEntry {
+table MemoryListEntry {
 id       : ushort;
 domain   : MemoryDomain;
 flags    : MemoryFlags;
@@ -237,7 +237,7 @@ enum PixelFormat : ubyte {
 //
 // id := 0..n-1, referenced by address list or memory list entries
 //
-        table TensorDescListEntry {
+table TensorDescListEntry {
 name : string;
 id : ushort;
 mem_id : ushort;
