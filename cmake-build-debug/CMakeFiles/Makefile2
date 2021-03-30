@@ -53,46 +53,64 @@ CMAKE_BINARY_DIR = /Users/wanglei/nvdla-depicter/cmake-build-debug
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/nvdla_depicter.dir/all
+all: examples/all
 
 .PHONY : all
 
 # The main recursive "preinstall" target.
-preinstall:
+preinstall: examples/preinstall
 
 .PHONY : preinstall
 
 # The main recursive "clean" target.
-clean: CMakeFiles/nvdla_depicter.dir/clean
+clean: examples/clean
 
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/nvdla_depicter.dir
+# Directory level rules for directory examples
+
+# Recursive "all" directory target.
+examples/all: examples/CMakeFiles/depicter_read_loadable.dir/all
+
+.PHONY : examples/all
+
+# Recursive "preinstall" directory target.
+examples/preinstall:
+
+.PHONY : examples/preinstall
+
+# Recursive "clean" directory target.
+examples/clean: examples/CMakeFiles/depicter_read_loadable.dir/clean
+
+.PHONY : examples/clean
+
+#=============================================================================
+# Target rules for target examples/CMakeFiles/depicter_read_loadable.dir
 
 # All Build rule for target.
-CMakeFiles/nvdla_depicter.dir/all:
-	$(MAKE) -f CMakeFiles/nvdla_depicter.dir/build.make CMakeFiles/nvdla_depicter.dir/depend
-	$(MAKE) -f CMakeFiles/nvdla_depicter.dir/build.make CMakeFiles/nvdla_depicter.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/wanglei/nvdla-depicter/cmake-build-debug/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9 "Built target nvdla_depicter"
-.PHONY : CMakeFiles/nvdla_depicter.dir/all
+examples/CMakeFiles/depicter_read_loadable.dir/all:
+	$(MAKE) -f examples/CMakeFiles/depicter_read_loadable.dir/build.make examples/CMakeFiles/depicter_read_loadable.dir/depend
+	$(MAKE) -f examples/CMakeFiles/depicter_read_loadable.dir/build.make examples/CMakeFiles/depicter_read_loadable.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/wanglei/nvdla-depicter/cmake-build-debug/CMakeFiles --progress-num=1,2 "Built target depicter_read_loadable"
+.PHONY : examples/CMakeFiles/depicter_read_loadable.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/nvdla_depicter.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/wanglei/nvdla-depicter/cmake-build-debug/CMakeFiles 9
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/nvdla_depicter.dir/all
+examples/CMakeFiles/depicter_read_loadable.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/wanglei/nvdla-depicter/cmake-build-debug/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 examples/CMakeFiles/depicter_read_loadable.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/wanglei/nvdla-depicter/cmake-build-debug/CMakeFiles 0
-.PHONY : CMakeFiles/nvdla_depicter.dir/rule
+.PHONY : examples/CMakeFiles/depicter_read_loadable.dir/rule
 
 # Convenience name for target.
-nvdla_depicter: CMakeFiles/nvdla_depicter.dir/rule
+depicter_read_loadable: examples/CMakeFiles/depicter_read_loadable.dir/rule
 
-.PHONY : nvdla_depicter
+.PHONY : depicter_read_loadable
 
 # clean rule for target.
-CMakeFiles/nvdla_depicter.dir/clean:
-	$(MAKE) -f CMakeFiles/nvdla_depicter.dir/build.make CMakeFiles/nvdla_depicter.dir/clean
-.PHONY : CMakeFiles/nvdla_depicter.dir/clean
+examples/CMakeFiles/depicter_read_loadable.dir/clean:
+	$(MAKE) -f examples/CMakeFiles/depicter_read_loadable.dir/build.make examples/CMakeFiles/depicter_read_loadable.dir/clean
+.PHONY : examples/CMakeFiles/depicter_read_loadable.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

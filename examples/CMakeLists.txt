@@ -1,0 +1,3 @@
+add_executable(depicter_read_loadable)
+set_target_properties(depicter_read_loadable PROPERTIES OUTPUT_NAME "depiter_read_loadable")
+target_sources(depicter_read_loadable PRIVATE 0.loadable.read.cpp)

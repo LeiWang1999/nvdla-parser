@@ -2,6 +2,8 @@ build
 
 cmake-build-debug
 
+data
+
 .vscode
 
 .idea

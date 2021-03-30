@@ -20,7 +20,7 @@ const nvdla::loadable::Loadable *get_loadable(const std::string &filename) {
     fread(data, sizeof(char), length, file);
     fclose(file);
     // Check whether the file is a loadable file.
-    flatbuffers::Verifier verifier(reinterpret_cast<const uint8_t *>(data), length);
+      flatbuffers::Verifier verifier(reinterpret_cast<const uint8_t *>(data), length);
     if(!nvdla::loadable::VerifyLoadableBuffer(verifier))
         //File is not a loadable file
         return nullptr;
