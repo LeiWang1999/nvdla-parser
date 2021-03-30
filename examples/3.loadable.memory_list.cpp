@@ -22,31 +22,29 @@ int main(){
   auto memory_list = loadable->memory_list();
   for(auto it = memory_list->begin(); it != memory_list->end(); it++){
     auto MemoryListEntry = *it;
+    auto id = MemoryListEntry->id();
     auto domain = MemoryListEntry->domain();
     auto flags = MemoryListEntry->flags();
+    auto size = MemoryListEntry->size();
+    auto alignment = MemoryListEntry->alignment();
+    auto contents = MemoryListEntry->contents();
+    auto offsets = MemoryListEntry->offsets();
+    auto bind_id = MemoryListEntry->bind_id();
+    auto tensor_desc_id = MemoryListEntry->tensor_desc_id();
 
     std::cout << "Loadable MemoryListEntry : " << std::endl;
-    std::cout << "id : " << MemoryListEntry->id() << std::endl;
-    std::cout << "domain : " << MemoryListEntry->id() << std::endl;
+    std::cout << "id : " << id << std::endl;
+    std::cout << "domain { SYSTEM = 0, SRAM = 1 } : " << domain << std::endl;
+    std::cout << "flags { NONE = 0, ALLOC = 1, SET = 2, INPUT = 4, OUTPUT = 8 } : "
+              << flags << std::endl;
+    std::cout << "size : " << size << std::endl;
+    std::cout << "alignment : " << alignment << std::endl;
+    std::cout << "contents : " << contents << std::endl;
+    std::cout << "offsets : " << offsets << std::endl;
+    std::cout << "bind_id : " << bind_id << std::endl;
+    std::cout << "tensor_desc_id : " << tensor_desc_id << std::endl;
 
-    std::cout << "interface（enum Interface : uint { NONE = 0, DLA1 = 1, EMU1 = 2 }） : "
-              << TaskListEntry->interface() << std::endl;
-    std::cout << "instance : " << TaskListEntry->instance() << std::endl;
-
-    std::cout << "address_list : ";
-    for(auto a_it = address_list->begin(); a_it != address_list->end(); a_it++)
-      std::cout << *a_it << " ";
     std::cout << std::endl;
-
-    std::cout << "pre_actions : ";
-    for(auto pre_it = pre_actions->begin(); pre_it != pre_actions->end(); pre_it++)
-      std::cout << *pre_it << " ";
-    std::cout << std::endl;
-
-    std::cout << "post_actions List : ";
-    for(auto pos_it = post_actions->begin(); pos_it != post_actions->end(); pos_it++)
-      std::cout << *pos_it << " ";
-    std::cout << std::endl << std::endl;
   }
 
   return 0;
