@@ -19,15 +19,16 @@ int main(){
   }
 
   auto loadable = get_loadable(filename);
-  auto tasklist = loadable->task_list();
-  for(auto it = tasklist->begin(); it != tasklist->end(); it++){
-    auto TaskListEntry = *it;
-    auto address_list = TaskListEntry->address_list();
-    auto pre_actions = TaskListEntry->pre_actions();
-    auto post_actions = TaskListEntry->post_actions();
+  auto memory_list = loadable->memory_list();
+  for(auto it = memory_list->begin(); it != memory_list->end(); it++){
+    auto MemoryListEntry = *it;
+    auto domain = MemoryListEntry->domain();
+    auto flags = MemoryListEntry->flags();
 
-    std::cout << "Loadable TaskListEntry : " << std::endl;
-    std::cout << "id : " << TaskListEntry->id() << std::endl;
+    std::cout << "Loadable MemoryListEntry : " << std::endl;
+    std::cout << "id : " << MemoryListEntry->id() << std::endl;
+    std::cout << "domain : " << MemoryListEntry->id() << std::endl;
+
     std::cout << "interface（enum Interface : uint { NONE = 0, DLA1 = 1, EMU1 = 2 }） : "
               << TaskListEntry->interface() << std::endl;
     std::cout << "instance : " << TaskListEntry->instance() << std::endl;
