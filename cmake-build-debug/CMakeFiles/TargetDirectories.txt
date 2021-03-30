@@ -1,5 +1,0 @@
-/Users/wanglei/nvdla-depicter/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/Users/wanglei/nvdla-depicter/cmake-build-debug/CMakeFiles/edit_cache.dir
-/Users/wanglei/nvdla-depicter/cmake-build-debug/examples/CMakeFiles/rebuild_cache.dir
-/Users/wanglei/nvdla-depicter/cmake-build-debug/examples/CMakeFiles/edit_cache.dir
-/Users/wanglei/nvdla-depicter/cmake-build-debug/examples/CMakeFiles/depicter_read_loadable.dir
