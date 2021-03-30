@@ -31,7 +31,7 @@ int main(){
 
     std::cout << "Loadable TaskListEntry : " << std::endl;
     std::cout << "id : " << id << std::endl;
-    std::cout << "interface（enum Interface : uint { NONE = 0, DLA1 = 1, EMU1 = 2 }） : "
+    std::cout << "interface { NONE = 0, DLA1 = 1, EMU1 = 2 } : "
               << interface << std::endl;
     std::cout << "instance : " << instance << std::endl;
 
