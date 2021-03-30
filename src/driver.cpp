@@ -10,7 +10,7 @@
 #include "include/DLA_desc.h"
 #include <cstring>
 #include <string>
-#include <sys/stat.h> 　
+#include <sys/stat.h>
 #include <sys/types.h>
 
 using std::string;

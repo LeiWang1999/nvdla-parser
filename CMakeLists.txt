@@ -1,5 +1,6 @@
 cmake_minimum_required(VERSION 3.14)
-project(nvdla_depicter_demo)
+
+project(nvdla_depicter_project)
 
 # Enable C++ 11
 set(CMAKE_CXX_STANDARD 11)
