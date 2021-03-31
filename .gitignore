@@ -1,11 +1,11 @@
 build
 
-lib
+lib/*
+!.gitkeep
 
 cmake-build-debug
 
-data
-
+data/*
 !.gitkeep
 
 .vscode
