@@ -11,7 +11,7 @@ using namespace nvdla::loadable;
 
 int main(){
   flatbuffers::FlatBufferBuilder builder;
-  const std::string filename = "/Users/wanglei/nvdla-depicter/data/lenet-mnist-caffe/fast-math.nvdla";
+  const std::string filename = "../../data/lenet-mnist-caffe/fast-math.nvdla";
 
   if(!is_file_exists(filename)) {
     std::cout << "Read File Failed" << std::endl;
