@@ -6,6 +6,8 @@ cmake-build-debug
 
 data
 
+!.gitkeep
+
 .vscode
 
 .idea
