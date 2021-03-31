@@ -20,8 +20,7 @@ int main(){
 
   auto loadable = get_loadable(filename);
   auto memory_list = loadable->memory_list();
-  for(auto it = memory_list->begin(); it != memory_list->end(); it++){
-    auto MemoryListEntry = *it;
+  for(auto MemoryListEntry : *memory_list){
     auto id = MemoryListEntry->id();
     auto domain = MemoryListEntry->domain();
     auto flags = MemoryListEntry->flags();
@@ -32,7 +31,7 @@ int main(){
     auto bind_id = MemoryListEntry->bind_id();
     auto tensor_desc_id = MemoryListEntry->tensor_desc_id();
 
-    std::cout << "Loadable MemoryListEntry : " << std::endl;
+    std::cout << "Loadable memory_list : " << std::endl;
     std::cout << "id : " << id << std::endl;
     std::cout << "domain { SYSTEM = 0, SRAM = 1 } : " << domain << std::endl;
     std::cout << "flags { NONE = 0, ALLOC = 1, SET = 2, INPUT = 4, OUTPUT = 8 } : "
@@ -42,7 +41,7 @@ int main(){
 
     std::cout << "contents size " << contents->size() << " : ";
     for(auto c : *contents)
-      std::cout << c << " ";
+      std::cout << c->c_str() << " ";
     std::cout << std::endl;
 
     std::cout << "offsets size " << offsets->size() << " : ";

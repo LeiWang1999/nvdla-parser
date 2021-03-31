@@ -16,3 +16,35 @@ add_executable(depicter_read_memory_list)
 set_target_properties(depicter_read_memory_list PROPERTIES OUTPUT_NAME "depicter_read_memory_list")
 target_link_libraries(depicter_read_memory_list ${PROJECT_NAME})
 target_sources(depicter_read_memory_list PRIVATE 3.loadable.memory_list.cpp)
+
+add_executable(depicter_read_address_list)
+set_target_properties(depicter_read_address_list PROPERTIES OUTPUT_NAME "depicter_read_address_list")
+target_link_libraries(depicter_read_address_list ${PROJECT_NAME})
+target_sources(depicter_read_address_list PRIVATE 4.loadable.address_list.cpp)
+
+add_executable(depicter_read_event_list)
+set_target_properties(depicter_read_event_list PROPERTIES OUTPUT_NAME "depicter_read_event_list")
+target_link_libraries(depicter_read_event_list ${PROJECT_NAME})
+target_sources(depicter_read_event_list PRIVATE 5.loadable.event_list.cpp)
+
+
+add_executable(depicter_read_blobs)
+set_target_properties(depicter_read_blobs PROPERTIES OUTPUT_NAME "depicter_read_blobs")
+target_link_libraries(depicter_read_blobs ${PROJECT_NAME})
+target_sources(depicter_read_blobs PRIVATE 6.loadable.blobs.cpp)
+
+add_executable(depicter_read_tensor_desc_list)
+set_target_properties(depicter_read_tensor_desc_list PROPERTIES OUTPUT_NAME "depicter_read_tensor_desc_list")
+target_link_libraries(depicter_read_tensor_desc_list ${PROJECT_NAME})
+target_sources(depicter_read_tensor_desc_list PRIVATE 7.loadable.tensor_desc_list.cpp)
+
+add_executable(depicter_read_reloc_list)
+set_target_properties(depicter_read_reloc_list PROPERTIES OUTPUT_NAME "depicter_read_reloc_list")
+target_link_libraries(depicter_read_reloc_list ${PROJECT_NAME})
+target_sources(depicter_read_reloc_list PRIVATE 8.loadable.reloc_list.cpp)
+
+
+add_executable(depicter_read_submit_list)
+set_target_properties(depicter_read_submit_list PROPERTIES OUTPUT_NAME "depicter_read_submit_list")
+target_link_libraries(depicter_read_submit_list ${PROJECT_NAME})
+target_sources(depicter_read_submit_list PRIVATE 9.loadable.submit_list.cpp)

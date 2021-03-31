@@ -118,8 +118,7 @@ enum EventOp    : ubyte  { WAIT = 0, SIGNAL = 1 }
 // val    := (relative) value to either wait for or to set
 // op     := wait or signal
 //
-
-        table EventListEntry {
+table EventListEntry {
 id    : ushort;
 type  : EventType;
 target: ushort;

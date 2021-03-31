@@ -20,8 +20,7 @@ int main(){
 
   auto loadable = get_loadable(filename);
   auto task_list = loadable->task_list();
-  for(auto it = task_list->begin(); it != task_list->end(); it++){
-    auto TaskListEntry = *it;
+  for(auto TaskListEntry : *task_list){
     auto id = TaskListEntry->id();
     auto interface = TaskListEntry->interface();
     auto instance = TaskListEntry->instance();
