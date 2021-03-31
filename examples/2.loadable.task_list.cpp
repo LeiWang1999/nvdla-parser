@@ -36,18 +36,18 @@ int main(){
     std::cout << "instance : " << instance << std::endl;
 
     std::cout << "address_list : ";
-    for(auto a_it = address_list->begin(); a_it != address_list->end(); a_it++)
-      std::cout << *a_it << " ";
+    for(auto ad :*address_list)
+      std::cout << ad << " ";
     std::cout << std::endl;
 
     std::cout << "pre_actions : ";
-    for(auto pre_it = pre_actions->begin(); pre_it != pre_actions->end(); pre_it++)
-      std::cout << *pre_it << " ";
+    for(auto pr : *pre_actions)
+      std::cout << pr << " ";
     std::cout << std::endl;
 
     std::cout << "post_actions List : ";
-    for(auto pos_it = post_actions->begin(); pos_it != post_actions->end(); pos_it++)
-      std::cout << *pos_it << " ";
+    for(auto po : *post_actions)
+      std::cout << po << " ";
     std::cout << std::endl << std::endl;
   }
 

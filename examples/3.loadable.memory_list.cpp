@@ -41,13 +41,13 @@ int main(){
     std::cout << "alignment : " << alignment << std::endl;
 
     std::cout << "contents size " << contents->size() << " : ";
-    for(auto c_it = contents->begin(); c_it != contents->end(); c_it++)
-      std::cout << (*c_it)->c_str() << " ";
+    for(auto c : *contents)
+      std::cout << c << " ";
     std::cout << std::endl;
 
     std::cout << "offsets size " << offsets->size() << " : ";
-    for(auto o_it = offsets->begin(); o_it != offsets->end(); o_it++)
-      std::cout << *o_it << " ";
+    for(auto o : *offsets)
+      std::cout << o << " ";
     std::cout << std::endl;
 
     std::cout << "bind_id : " << bind_id << std::endl;
