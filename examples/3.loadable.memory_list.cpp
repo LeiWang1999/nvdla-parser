@@ -39,8 +39,17 @@ int main(){
               << flags << std::endl;
     std::cout << "size : " << size << std::endl;
     std::cout << "alignment : " << alignment << std::endl;
-    std::cout << "contents : " << contents << std::endl;
-    std::cout << "offsets : " << offsets << std::endl;
+
+    std::cout << "contents size " << contents->size() << " : ";
+    for(auto c_it = contents->begin(); c_it != contents->end(); c_it++)
+      std::cout << (*c_it)->c_str() << " ";
+    std::cout << std::endl;
+
+    std::cout << "offsets size " << offsets->size() << " : ";
+    for(auto o_it = offsets->begin(); o_it != offsets->end(); o_it++)
+      std::cout << *o_it << " ";
+    std::cout << std::endl;
+
     std::cout << "bind_id : " << bind_id << std::endl;
     std::cout << "tensor_desc_id : " << tensor_desc_id << std::endl;
 
