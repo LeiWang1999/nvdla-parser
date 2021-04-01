@@ -10,6 +10,7 @@
 
 #include "external/loadable_generated.h"
 #include <string>
+#include "dla_interface.h"
 
 //Get the pointer of the loadable file.
 const nvdla::loadable::Loadable * get_loadable(const std::string & filename);

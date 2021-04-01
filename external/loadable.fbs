@@ -60,6 +60,7 @@ enum LoadableVersionSubMinor : ubyte { VAL = 0 }
 // should be set to the DLA firmware version being
 // targetted.
 //
+// sub_interface {0:NONE 1:ADDR0 2:DEPS 3:OPS 4:SURFS 5:LUTS}
 table Blob {
 name        : string;
 size        : ulong;

@@ -48,3 +48,8 @@ add_executable(depicter_read_submit_list)
 set_target_properties(depicter_read_submit_list PROPERTIES OUTPUT_NAME "depicter_read_submit_list")
 target_link_libraries(depicter_read_submit_list ${PROJECT_NAME})
 target_sources(depicter_read_submit_list PRIVATE 9.loadable.submit_list.cpp)
+
+add_executable(depicter_read_network_desc)
+set_target_properties(depicter_read_network_desc PROPERTIES OUTPUT_NAME "depicter_read_network_desc")
+target_link_libraries(depicter_read_network_desc ${PROJECT_NAME})
+target_sources(depicter_read_network_desc PRIVATE 10.read.network_desc.cpp)

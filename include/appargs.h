@@ -23,7 +23,7 @@ struct Test_app_args
     bool show_help;
 
     Test_app_args() :
-            inputName(""),
+            inputName("../data/lenet-mnist-caffe/fast-math.nvdla"),
             outputPath("output/"),
             outputName(""),
             format("pdf") ,

@@ -29,7 +29,7 @@ int main(){
         auto val = EventListEntry->val();
         auto op = EventListEntry->op();
 
-        std::cout << "Loadable AddressListEntry : " << std::endl;
+        std::cout << "Loadable event_list : " << std::endl;
         std::cout << "id : " << id << std::endl;
         std::cout << "type { EVENTTYPE0 = 0, EVENTTYPE1 = 1, EVENTTYPE2 = 2 } : " << type << std::endl;
         std::cout << "target : " << target << std::endl;
