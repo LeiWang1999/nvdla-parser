@@ -22,7 +22,7 @@ add_library(${PROJECT_NAME} SHARED
         src/Graph_generator.cpp
         src/Interface.cpp
         src/tools.cpp
-        )
+        include/Parser.h src/Parser.cpp)
 
 add_executable(nvdla_depicter main.cpp)
 

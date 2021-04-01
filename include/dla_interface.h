@@ -38,7 +38,7 @@
  * graph of these operations
  * @{
  */
-#define DLA_OP_BDMA		0®
+#define DLA_OP_BDMA		0
 #define DLA_OP_CONV		1
 #define DLA_OP_SDP		2
 #define DLA_OP_PDP		3

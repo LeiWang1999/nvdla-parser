@@ -21,7 +21,7 @@ int main(){
 
     auto loadable = get_loadable(filename);
     auto blobs = loadable->blobs();
-    int idx = 1;
+    int idx = 0;
     for(auto Blob : *blobs){
         auto name = Blob->name();
         auto size = Blob->size();
