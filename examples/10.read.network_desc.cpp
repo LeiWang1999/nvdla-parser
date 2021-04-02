@@ -8,7 +8,6 @@
 #include "external/loadable_generated.h"
 #include "tools.h"
 #include "Interface.h"
-#include "driver.h"
 
 using namespace nvdla::loadable;
 
@@ -21,8 +20,7 @@ int main(){
     return -1;
   }
 
-  auto loadable = get_loadable(filename);
-  Driver driver(loadable);
+  auto loadable = get_loadable(filename);;
   auto task_list = loadable->task_list();
   auto root_address_list = loadable->address_list();
   auto root_memory_list = loadable->memory_list();

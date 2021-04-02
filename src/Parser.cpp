@@ -4,6 +4,29 @@
 
 #include "Parser.h"
 
+
+Addr_list::Addr_list(const nvdla::loadable::Loadable *loadable) {
+    auto address_list = loadable->address_list();
+    for(int i = 0; i<address_list->size();i++){
+        auto entry = address_list->Get(i);
+        index_dict.emplace( std::pair<int,int>(entry->id(),entry->mem_id()) );
+    }
+}
+
+Mem_list::Mem_list(const nvdla::loadable::Loadable  *loadable) {
+    auto mem_list = loadable->memory_list();
+    for(int i = 0; i<mem_list->size();i++){
+        auto entry = mem_list->Get(i);
+        if(entry->contents()->size())
+            alias_dict.emplace(std::pair<int,std::string>(entry->id(),entry->contents()->Get(0)->c_str()));
+        else
+            alias_dict.emplace(std::pair<int,std::string>(entry->id(),""));
+    }
+
+}
+
+
+
 Parser::Parser(nvdla::loadable::Loadable const *loadable)
     :address_list(loadable)
     ,memory_list(loadable)
