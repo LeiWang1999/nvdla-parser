@@ -53,3 +53,8 @@ add_executable(parser_read_network_desc)
 set_target_properties(parser_read_network_desc PROPERTIES OUTPUT_NAME "parser_read_network_desc")
 target_link_libraries(parser_read_network_desc ${PROJECT_NAME})
 target_sources(parser_read_network_desc PRIVATE 10.read.network_desc.cpp)
+
+add_executable(parser_read_surface_desc)
+set_target_properties(parser_read_surface_desc PROPERTIES OUTPUT_NAME "parser_read_surface_desc")
+target_link_libraries(parser_read_surface_desc ${PROJECT_NAME})
+target_sources(parser_read_surface_desc PRIVATE 11.read.surface_desc.cpp)
