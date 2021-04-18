@@ -50,6 +50,11 @@ class Parser {
 
 public:
   explicit Parser(nvdla::loadable::Loadable const * loadable);
+  struct dla_network_desc * get_dla_network_desc() {return network_desc;}
+  struct dla_common_op_desc * get_dla_common_op_desc() {return common_op_desc;}
+  union dla_surface_container * get_dla_surface_desc() {return surface_desc;}
+  union dla_operation_container * get_dla_operation_desc() {return operation_desc;}
+
 };
 
 #endif // NVDLA_DEPICTER_PROJECT_PARSER_H
